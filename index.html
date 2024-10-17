@@ -14,8 +14,7 @@
   </header>
 
   
-  <div id="ramen-menu">
-  
+  <div id="ramen-menu" aria-label="Ramen Menu">
   </div>
 
 
@@ -38,18 +37,19 @@
   <form id="new-ramen">
     <h4>Add New Ramen</h4>
     <label for="new-name">Name: </label>
-    <input type="text" name="name" id="new-name" />
+    <input type="text" name="name" id="new-name"/>
     <label for="new-restaurant">Restaurant: </label>
     <input type="text" name="restaurant" id="new-restaurant" />
     <label for="new-image">Image: </label>
     <input type="text" name="image" id="new-image" />
     <label for="new-rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
+    <input type="number" name="rating" id="new-rating" min="1" max="10"/>
     <label for="new-comment">Comment: </label>
     <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
     <input type="submit" id='submit-button' value="Create" />
   </form>
 
+  <button id="delete-button">Delete Ramen</button>
 </body>
 
 </html>
